@@ -1,0 +1,35 @@
+name: fitness-agent
+
+services:
+  fitness-bot:
+    build: .
+    image: fitness-agent:latest
+    container_name: fitness-agent-bot
+    env_file: .env
+    restart: unless-stopped
+
+    # HTTP 通道只绑本机回环：自建看板 / 脚本经 127.0.0.1:5100 调用，
+    # 不对公网暴露。只用飞书的话这行可以删掉。
+    ports:
+      - "127.0.0.1:5100:5100"
+
+    volumes:
+      # 数据库、WHOOP token、个人档案都在这里，容器重建不丢
+      - ./app/data:/app/data
+
+    # 小机器（2C2G）上给一个硬上限，避免内存打爆宿主
+    mem_limit: 512m
+    cpus: "0.5"
+
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:5100/health', timeout=3)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

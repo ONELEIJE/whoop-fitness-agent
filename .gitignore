@@ -1,0 +1,24 @@
+# 密钥与本地配置
+.env
+.env.local
+*.env
+!.env.example
+
+# 运行时数据（数据库、WHOOP token、个人档案）
+app/data/*
+!app/data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 其它
+*.log
+*.sqlite3
+.DS_Store
+Thumbs.db
+# 本地自检产生的临时库
+fitness-selftest-*/

@@ -1,0 +1,13 @@
+{
+  "date_of_birth": "1995-06-01",
+  "height_cm": 178,
+  "weight_kg": 74.5,
+  "weight_note": "晨起空腹",
+  "training_experience_years": 3,
+  "health_status": "无慢性病，右肩偶有不适",
+  "goals": ["增肌", "体脂降到 15% 以下"],
+  "goal_priority": "增肌优先，减脂其次",
+  "preferred_frequency_per_week": 4,
+  "preferred_split": ["上肢推", "下肢", "上肢拉", "全身"],
+  "session_duration_minutes": 60
+}

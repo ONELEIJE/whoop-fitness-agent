@@ -1,0 +1,11 @@
+# Keep this file ASCII-only: pip reads requirement files with the system
+# locale encoding, so a non-ASCII comment breaks `pip install -r` on
+# zh-CN Windows (GBK). Chinese notes live in the docs instead.
+lark-oapi==1.4.12
+openai==1.58.1
+python-dotenv==1.0.1
+flask==3.1.1
+requests==2.32.3
+# IANA timezone db: slim images and Windows have no /usr/share/zoneinfo,
+# while ZoneInfo("Asia/Shanghai") needs it.
+tzdata==2026.5
