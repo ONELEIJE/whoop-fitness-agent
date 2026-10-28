@@ -337,6 +337,8 @@ WHOOP 原始响应、训练明细、对话历史只写本地 SQLite（`app/data/
 - 单用户设计：多用户需要把 `scope` 与档案做成多租户
 - 测试只有 `scripts/selftest.py`（42 项离线检查），没有覆盖 WHOOP / 飞书真实 API 的集成测试——
   那两个接口需要真账号，只能用 `scripts/whoop_dump.py` 手工验证
+- `docker build` 与 `docker compose up` 没有做端到端验证（作者本机没有 Docker）；`Dockerfile` 和
+  `docker-compose.yml` 是按线上真实配置整理的，部署请照 `docs/02-ecs-deploy.md` 走，卡住了欢迎开 Issue
 
 ## License
 
