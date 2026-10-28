@@ -1,5 +1,7 @@
 # Fitness Agent · WHOOP × 飞书
 
+**中文** | [English](README.en.md)
+
 [![ci](https://github.com/ONELEIJE/whoop-fitness-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/ONELEIJE/whoop-fitness-agent/actions/workflows/ci.yml)
 ![python](https://img.shields.io/badge/python-3.11-3776AB)
 ![license](https://img.shields.io/badge/license-MIT-green)

@@ -1,5 +1,7 @@
 # Fitness Agent · WHOOP × Feishu (Lark)
 
+[中文](README.md) | **English**
+
 > A personal fitness coach agent running on a small Alibaba Cloud ECS instance.
 > It pulls WHOOP recovery / sleep / workout data, coaches you with an LLM, and lives
 > inside Feishu — logging your workouts from plain language and producing monthly reviews.
