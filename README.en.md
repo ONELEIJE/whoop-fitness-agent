@@ -1,4 +1,4 @@
-﻿# Fitness Agent · WHOOP × Feishu (Lark)
+# Fitness Agent · WHOOP × Feishu (Lark)
 
 > A personal fitness coach agent running on a small Alibaba Cloud ECS instance.
 > It pulls WHOOP recovery / sleep / workout data, coaches you with an LLM, and lives
@@ -22,6 +22,8 @@ The full Chinese write-up is in [README.md](README.md); this page is a condensed
 ![WHOOP card in Feishu](docs/assets/whoop-card.png)
 
 <p align="center"><i>One <code>/whoop</code> in Feishu: recovery, 30-day baseline, sleep stages, latest workout, body metrics</i></p>
+
+<p align="center"><sub>Screenshot taken from the live deployment, keeping the API's raw precision (skin temp 33.8266668°C); the released code rounds these values to one decimal, so yours will read 33.8°C.</sub></p>
 
 ## Architecture
 

@@ -1,4 +1,4 @@
-﻿# Fitness Agent · WHOOP × 飞书
+# Fitness Agent · WHOOP × 飞书
 
 [![ci](https://github.com/ONELEIJE/whoop-fitness-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/ONELEIJE/whoop-fitness-agent/actions/workflows/ci.yml)
 ![python](https://img.shields.io/badge/python-3.11-3776AB)
@@ -30,6 +30,8 @@ python scripts/selftest.py        # 42 项离线检查：建表 / 提示词 / �
 ![飞书里的 WHOOP 数据卡片](docs/assets/whoop-card.png)
 
 <p align="center"><i>在飞书里发一次 <code>/whoop</code> 拿到的卡片：恢复、30 天恢复基线、睡眠分期、最近运动、身体指标</i></p>
+
+<p align="center"><sub>截图为线上真实数据，保留接口返回的原始精度（皮肤温度 33.8266668°C）；开源版对这些数值统一保留一位小数，你跑出来的会是 33.8°C。</sub></p>
 
 ---
 
